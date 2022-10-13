@@ -8,6 +8,7 @@
   --o-padding: 32px;
   --light: #eef2ff;
   --dark: #262626;
+  --bg-dark: #064e3b;
 }
 
 * {
@@ -30,8 +31,61 @@ body {
 
 .sidebar {
   grid-area: 1 / 1 / 3 / 2;
+  background-color: var(--bg-dark);
+  color: var(--light);
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--o-padding);
+  gap: 8px;
+}
+
+ul {
+  list-style-type: none;
+  padding: var(--o-padding);
+  display: grid;
+  gap: 16px;
+
+}
+
+.navbar li, .conf-buttons li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.navbar img, .conf-buttons img {
+  max-width: 32px;
+  max-height: 32px;
+}
+
+.header img {
+  max-width: 24px;
+  max-height: 24px;
 }
 
 .header {
   grid-area: 1 / 2 / 2 / 3;
+  display: grid;
+  grid-template: 1fr 1fr / 2fr 1fr;
+  background-color: #059669;
+  padding: var(--i-padding);
+}
+
+.header > * {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.file-buttons button {
+  padding: 8px 16px;
+  border-radius: 16px;
 }
