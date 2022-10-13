@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,800;0,900;1,300&display=swap');
+
+:root {
+  --font: 'Lato', sans-serif;
+  --radius: 4px;
+  --btn-radius: 8px;
+  --i-padding: 16px;
+  --o-padding: 32px;
+  --light: #eef2ff;
+  --dark: #262626;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--dark);
+}
