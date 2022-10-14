@@ -56,7 +56,7 @@ ul {
   align-items: center;
   gap: 16px;
   font-weight: bold;
-  font-size: larger;
+  font-size: 1rem;
 }
 
 .navbar img, .conf-buttons img {
@@ -69,7 +69,6 @@ ul {
   display: grid;
   grid-template: 0.75fr 1fr / 2fr 1fr;
   background-color: #059669;
-  gap: 8px;
 }
 
 .header > * {
@@ -91,6 +90,7 @@ ul {
   padding: var(--i-padding);
   outline-style: none;
   background-color: #ecfdf5;
+  color: rgb(150, 150, 150);
 }
 
 #user-info-pic, #user-profile-pic {
@@ -106,7 +106,7 @@ ul {
 }
 
 #user-profile-name {
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 .header .user-profile, .header .file-buttons {
@@ -114,6 +114,108 @@ ul {
 }
 
 .file-buttons button {
-  padding: 8px 16px;
+  color: var(--dark);
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 12px 20px;
   border-radius: 16px;
+  border-style: none;
+  background-color: #d1fae5;
+}
+
+.file-buttons button:hover {
+  background-color: white;
+}
+
+.main {
+  display: grid;
+  grid-template: auto auto / 2.5fr 1fr;
+  gap: var(--i-padding);
+  color: var(--dark);
+  background-color: #a7f3d0;
+  padding: var(--i-padding);
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+.main .projects {
+  grid-area: 1 / 1 / 3 / 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards {
+  display: grid;
+  grid-template: auto auto auto / auto auto;
+  gap: var(--i-padding);
+  padding: var(--i-padding);
+  height: auto;
+  flex: 1;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: flex-start;
+  background-color: #ecfdf5;
+  border-radius: 16px;
+  padding: var(--i-padding);
+  border-left: 4px solid #059669;
+}
+
+.card-buttons {
+  align-self: flex-end;
+}
+
+.card-buttons img {
+  filter: invert(100%);
+  max-width: 24px;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: #ecfdf5;
+  border-radius: 8px;
+  margin-top: var(--i-padding);
+  padding: var(--i-padding);
+}
+
+.ad-card .card-title {
+  font-size: 1rem;
+}
+
+.ad-card p {
+  font-size: 0.825rem;
+}
+
+.trending img {
+  max-width: 48px;
+  border-radius: 16px;
+}
+
+.trending {
+  display: flex;
+  flex-direction: column;
+}
+
+.trending-cards {
+  flex: 1;
+}
+
+.trending-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 0.825rem;
 }
